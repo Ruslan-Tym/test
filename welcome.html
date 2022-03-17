@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Univer</title>
+ <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/stsm.css}"/>
+</head>
+<body>
+
+<div>
+      <img th:src="@{/images/stsmlogo.png}" alt="STSM logo" title="STSM logo"/>
+</div>
+
+<h1>Welcome to the university of science!</h1><br>
+<a href ="main-address"> <button>Addresses</button></a>
+<a href="/univer/audience"> <button>Audiences</button></a>
+<a href="/univer/course"> <button>Courses</button></a>
+<a href="/univer/group"> <button>Groups</button></a>
+<a href="/univer/holiday"> <button>Holidays</button></a>
+<a href="/univer/lesson"> <button>Lessons</button></a>
+<a href="/univer/lesson-times"> <button>Lesson-times</button></a>
+<a href="/univer/student"> <button>Students</button></a>
+<a href="/univer/teacher"> <button>Teachers</button></a>
+<a href="/univer/vaction"> <button>Vacations</button></a>
+<h3>Your welcome is:</h3><p th:text="${welcome}"/> 
+
+
+
+</body>
+</html>
